@@ -1,0 +1,13 @@
+".source.js":
+  "Grunt":
+    prefix: "grunt"
+    body: "module.exports = function(grunt) {\n\t$1\n};"
+  "Grunt: initConfig":
+    prefix: "grunt:initconfig"
+    body: "grunt.initConfig({\n\t$1\n});"
+  "Grunt: loadNpmTasks":
+    prefix: "grunt:loadnpmtasks"
+    body: "grunt.loadNpmTasks('${1:grunt-$2}');"
+  "Grunt: registerTask":
+    prefix: "grunt:registertask"
+    body: "grunt.registerTask('${1:default}', ['$2']);"
