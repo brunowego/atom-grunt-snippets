@@ -11,3 +11,6 @@
   "Grunt: registerTask":
     prefix: "grunt:registertask"
     body: "grunt.registerTask('${1:default}', ['$2']);"
+  "Grunt: Autoload":
+    prefix: "grunt:autoload"
+    body: "// Time how long tasks take. Can help when optimizing build times\nrequire('time-grunt')(grunt);\n\n// Automatically load required grunt tasks\nrequire('load-grunt-config')(grunt, {\n\tinit: true\n});"
